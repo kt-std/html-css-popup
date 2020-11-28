@@ -14,93 +14,96 @@
 			<ul class="nav__list">
 				<li class="nav__item"><a href="#mail" class="item__link">Mail</a></li>
 				<li class="nav__item"><a href="#pictures" class="item__link">Pictures</a></li>
-				<li class="nav__item">
+				<li class="nav__item popup-btn">
 					<input type="checkbox" class="checkbox__input" id="check">
-					<label class="checkbox" for="check"></label>					
+					<label class="checkbox" for="check">
+						<img src="assets/list.svg" alt="List of other applications" class="checkbox__image">
+					</label>					
 					<ul class="popup">
 						<li class="popup__item item">
 							<a href="#" class="item__link">
 								<div class="item__icon mail"></div>
-								<h5>Mail</h5>
+								<p>Mail</p>
 							</a>
 						</li>
 						<li class="popup__item item">
 							<a href="#" class="item__link">
 								<div class="item__icon calendar"></div>
-								<h5>Calendar</h5>
+								<p>Calendar</p>
 							</a>
 						</li>
 						<li class="popup__item item">
 							<a href="#" class="item__link">
 								<div class="item__icon news"></div>
-								<h5>News</h5>
+								<p>News</p>
 							</a>
 						</li>
 						<li class="popup__item item">
 							<a href="#" class="item__link">
 								<div class="item__icon files"></div>
-								<h5>Files</h5>
+								<p>Files</p>
 							</a>
 						</li>
 						<li class="popup__item item">
 							<a href="#" class="item__link">
 								<div class="item__icon maps"></div>
-								<h5>Map</h5>
+								<p>Map</p>
 							</a>
 						</li>
 						<li class="popup__item item">
 							<a href="#" class="item__link">
 								<div class="item__icon contacts"></div>
-								<h5>Contacts</h5>
+								<p>Contacts</p>
 							</a>
 						</li>
 						<li class="popup__item item">
 							<a href="#" class="item__link">
 								<div class="item__icon pictures"></div>
-								<h5>Pictures</h5>
+								<p>Pictures</p>
 							</a>
 						</li>
 						<li class="popup__item item">
 							<a href="#" class="item__link">
 								<div class="item__icon video"></div>
-								<h5>Video</h5>
+								<p>Video</p>
 							</a>
 						</li>
 						<li class="popup__item item">
 							<a href="#" class="item__link">
 								<div class="item__icon docs"></div>
-								<h5>Documents</h5>
+								<p>Documents</p>
 							</a>
 						</li>
 						<li class="more-btn">
-							<input type="checkbox" id="more">
+							<input type="checkbox" class="checkbox__input" id="check_more">
 							<ul class="popup__more">
 								<li class="popup__item item">
-									<a href="#">
+									<a href="#" class="item__link">
 										<div class="item__icon apps"></div>
-										<h5>Apps</h5>
+										<p>Apps</p>
 									</a>
 								</li>
 								<li class="popup__item item">
-									<a href="#">
+									<a href="#" class="item__link">
 										<div class="item__icon planet"></div>
-										<h5>Planet</h5>
+										<p>Planet</p>
 									</a>
 								</li>
 								<li class="popup__item item">
-									<a href="#">
+									<a href="#" class="item__link">
 										<div class="item__icon translator"></div>
-										<h5>Translator</h5>
+										<p>Translator</p>
 									</a>
 								</li>
 							</ul>
-							<label for="more" class="label"></label>
+							<label class="more" for="check_more">
+							</label>
 						</li>
 					</ul>
 				</li>
 
 				<li class="nav__item">
-					<a href="https://github.com/kt-std/kottans-frontend">
+					<a class="item__link no-padding" href="https://github.com/kt-std/kottans-frontend">
 						<div class="user-icon"></div>
 					</a>
 				</li>
@@ -110,7 +113,7 @@
 	</header>
 	<main class="search-container">
 		<div class="logo">
-			<img class="logo__image" src="assets/logo.svg">
+			<img class="logo__image" src="assets/logo.svg" alt="Search engine logo">
 		</div>
 		<div class="search-field">
 			<input type="text" class="search-field__input" placeholder="Search for something!">
