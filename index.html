@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HTML & CSS popup</title>
+</head>
+<body>
+	<header>
+		<nav class="nav">
+			<ul class="nav__list">
+				<li class="nav__item"><a href="#mail">Mail</a></li>
+				<li class="nav__item"><a href="#pictures">Pictures</a></li>
+				<li class="nav__item">
+					<input type="checkox" class="show-content-btn" id="show">
+					<label for="show"></label>
+					<ul class="popup">
+						<li class="popup__item item">
+							<a href="#">
+								<div class="item__icon mail"></div>
+								<h5>Mail</h5>
+							</a>
+						</li>
+						<li class="popup__item item">
+							<a href="#">
+								<div class="item__icon calendar"></div>
+								<h5>Calendar</h5>
+							</a>
+						</li>
+						<li class="popup__item item">
+							<a href="#">
+								<div class="item__icon news"></div>
+								<h5>News</h5>
+							</a>
+						</li>
+						<li class="popup__item item">
+							<a href="#">
+								<div class="item__icon files"></div>
+								<h5>Files</h5>
+							</a>
+						</li>
+						<li class="popup__item item">
+							<a href="#">
+								<div class="item__icon maps"></div>
+								<h5>Maps</h5>
+							</a>
+						</li>
+						<li class="popup__item item">
+							<a href="#">
+								<div class="item__icon contacts"></div>
+								<h5>Contacts</h5>
+							</a>
+						</li>
+						<li class="popup__item item">
+							<a href="#">
+								<div class="item__icon pictures"></div>
+								<h5>Pictures</h5>
+							</a>
+						</li>
+						<li class="popup__item item">
+							<a href="#">
+								<div class="item__icon video"></div>
+								<h5>Video</h5>
+							</a>
+						</li>
+						<li class="popup__item item">
+							<a href="#">
+								<div class="item__icon docs"></div>
+								<h5>Documents</h5>
+							</a>
+						</li>
+						<li class="more-btn">
+							<input type="checkbox" id="more"><label for="more"></label>
+							<ul>
+								<li class="popup__item item">
+									<a href="#">
+										<div class="item__icon apps"></div>
+										<h5>Apps</h5>
+									</a>
+								</li>
+								<li class="popup__item item">
+									<a href="#">
+										<div class="item__icon planet"></div>
+										<h5>Planet</h5>
+									</a>
+								</li>
+								<li class="popup__item item">
+									<a href="#">
+										<div class="item__icon translator"></div>
+										<h5>Translator</h5>
+									</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+
+				<li class="nav__item">
+					<a href="https://github.com/kt-std/kottans-frontend">
+						<div class="user-icon"></div>
+					</a>
+				</li>
+
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<img class="logo" src="assets/logo.svg">
+		<div class="search-field">
+			<input type="text" class="search-field__input">
+			<button class="search-field__button button">
+				<img class="button__image">
+			</button>
+		</div>
+	</main>
+</body>
+</html>
