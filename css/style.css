@@ -1,56 +1,138 @@
-.nav {
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	outline: none;
+	font-size: 16px;
+	border: 1px solid red;
+	line-height: 1.2;
 }
+body{
+	max-height: 100vh;
+	display: grid;
+	grid-template: 80px calc(200vh-80px) / 100%;
+}
+.nav {
+	border: 1px solid green;
+}
+
 .nav__list {
+	display: flex;
 }
 .nav__item {
+	width: 100px;
+	height: 50px;
 }
+
+.show-content-btn:checked ~ ul.popup{
+	display: flex;
+}
+
+#more:checked ~ ul.popup__more{
+	display: flex;
+}
+#more:checked ~label[for="more"]:after{
+	content: "Less";
+	display: flex;
+}
+
+label[for="more"]:after{
+	content: "More";
+	color: yellow;
+}
+
+.item__link{
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+	box-sizing: border-box;
+}
+
 .show-content-btn {
 }
+
 .popup {
+	display: none;
+	max-height: 50vh;
+	width: 300px;
+	flex-wrap: wrap;
 }
+
+.popup__more{	
+	display: none;
+	overflow-y: scroll;
+}
+
 .popup__item {
+
 }
 .item {
 }
 .item__icon {
+	width: 50px;
+	height: 50px;
+	background: contain;
+	background-position: center;
+	background-repeat: no-repeat;
 }
-.mail {
-}
-.calendar {
-}
-.news {
-}
-.files {
-}
-.maps {
-}
-.contacts {
-}
-.pictures {
-}
-.video {
-}
-.docs {
-}
-.more-btn {
-}
-.apps {
-}
-.planet {
-}
-.translator {
-}
-.user-icon {
-}
-.logo {
-}
+
+
 .search-field {
 }
 .search-field__input {
 }
 .search-field__button {
 }
+
 .button {
 }
+
+.mail {
+	background-image: url("../assets/mail.svg");
+}
+.calendar {
+	background-image: url("../assets/calendar.svg");
+}
+.news {
+	background-image: url("../assets/news.svg");
+}
+.files {
+	background-image: url("../assets/files.svg");
+}
+.maps {
+	background-image: url("../assets/maps.svg");
+}
+.contacts {
+	background-image: url("../assets/contacts.svg");
+}
+.pictures {
+	background-image: url("../assets/pictures.svg");
+}
+.video {
+	background-image: url("../assets/video.svg");
+}
+.docs {
+	background-image: url("../assets/documents.svg");
+}
+.more-btn {
+}
+.apps {
+	background-image: url("../assets/app.svg");
+}
+.planet {
+	background-image: url("../assets/planet.svg");
+}
+.translator {
+	background-image: url("../assets/translate.svg");
+}
+.user-icon {
+	background-image: url("../assets/user.svg");
+}
+.logo {
+	position: absolute;
+	z-index: -1;
+}
 .button__image {
+	background-image: url("../assets/search.svg");
 }
