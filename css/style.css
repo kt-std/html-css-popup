@@ -58,6 +58,7 @@ body{
 }
 
 a:visited,
+a,
 a:active{
 	color: #303030;
 }
@@ -186,6 +187,7 @@ a:focus,
 
 .search-field__input {
 	height: 50px;	
+	font-family: Lato, sans-serif;
 	border-radius: 25px;
 	border: none;
 	text-transform: capitalize;
