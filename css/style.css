@@ -52,7 +52,7 @@ body{
 }
 
 .nav__item {	
-	min-width: 90px;
+	min-width: 80px;
 	height: 60px;
 	margin-right: 10px;	
 }
@@ -69,6 +69,7 @@ a:hover{
 
 a:hover,
 .more:hover,
+.bell:hover, 
 .search-field__input:hover,
 .checkbox__image:hover,
 .button:hover .button__image,
@@ -90,7 +91,10 @@ a:focus,
 	border: 1px dashed #85c295;
 }
 
-.checkbox__input{
+
+
+.checkbox__input,
+.checkbox__input_bell{
 	-moz-appearance:none;
 	-webkit-appearance: none;
 	appearance:none;
@@ -106,6 +110,47 @@ a:focus,
 }
 .checkbox__image:hover{
 	background-color: rgba(100, 100, 100, .1);
+}
+
+.bell{
+	padding: 20px;
+	filter: saturate(0);
+}
+.bell:hover{
+	background-color: white;
+}
+
+.bell_input:checked + .checkbox>.bell{
+	filter: saturate(1);
+	animation: ring 1.5s ease;
+}
+
+
+@keyframes ring {
+    0% {
+        transform: rotate(35deg);
+    }
+    12.5% {
+        transform: rotate(-30deg);
+    }
+    25% {
+        transform: rotate(25deg);
+    }
+    37.5% {
+        transform: rotate(-20deg);
+    }
+    50% {
+        transform: rotate(15deg);
+    }
+    62.5% {
+        transform: rotate(-10deg);
+    }
+    75% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
 }
 
 .item__link,
